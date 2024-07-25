@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #dfe0e4;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+
+}
+
+img {
+  margin-top: 10px;
+  position: absolute;
+}
+
+label.logo {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 80px;
+  margin-left: 50px;
+
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 200px;
+
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 8px 20px;
+  position: relative;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+#checkbtn img {
+
+  height: 40px;
+  float: right;
+  margin-left: 88%;
+  margin-top: 18px;
+
+}
+
+#check {
+  display: none;
+}
+
+#checkbtn {
+  display: none;
+}
+
+#check:checked~ul {
+  left: 0;
+}
+
+.homecard1 {
+
+  height: 24rem;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 150px;
+  background-color: #dfe0e4;
+  border-radius: 8px;
+}
+
+.homecontent1 {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+.discription1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  width: 70%;
+  margin-top: 5px;
+
+
+}
+
+#Hcolor {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  text-align: center;
+  margin: 10px;
+  color: rgb(128, 128, 128);
+
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  margin-top: 5px;
+
+}
+
+.color li {
+  border: 1px solid;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
+}
+
+.size {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.size li {
+  justify-content: center;
+  border: 1px solid red;
+  width: 20px;
+  height: 14px;
+}
+
+.discription2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  gap: 20px;
+  width: 70%;
+  margin-top: 15px;
+}
+
+button {
+  width: 150px;
+  height: 35px;
+  font-size: 15px;
+  background-color: rgb(255, 135, 0);
+  border-radius: 3px;
+  border-radius: 1px solid white;
+}
+
+.homeimg1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: -170px;
+  margin-right: 100px;
+  overflow: hidden;
+
+
+}
+
+.homeimg1 img {
+  height: 22rem;
+  position: absolute;
+  mix-blend-mode: darken;
+  animation: fadeInRight 0.9s;
+}
+
+.homecard2 {
+  height: 50vh;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 10rem;
+  background-color: #dfe0e4;
+  border-radius: 8px;
+
+
+}
+
+.homecard2 img {
+  height: 70vh;
+  margin-top: -8%;
+  animation: fadeInLeft 0.9s;
+}
+
+#discription3 {
+  width: 60%;
+  margin-left: 150%;
+
+
+}
+
+.homecard3 {
+  height: 50vh;
+  width: 40%;
+  margin-left: 50%;
+  margin-top: 7rem;
+  background-color: #dfe0e4;
+  border-radius: 8px;
+
+}
+
+.homecard3 img {
+  height: 60vh;
+  margin-top: -5%;
+  margin-left: 5rem;
+  animation: fadeInRight 0.9s;
+}
+
+.homecard4 {
+  height: 50vh;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 7rem;
+  background-color: #dfe0e4;
+  border-radius: 8px;
+
+}
+
+.homecard4 img {
+  height: 60vh;
+  margin-top: -4.8%;
+  margin-left: -1.7%;
+  animation: fadeInLeft 0.9s;
+}
+
+.homecard5 {
+  height: 50vh;
+  width: 40%;
+  margin-left: 50%;
+  margin-top: 7rem;
+  background-color: #dfe0e4;
+  border-radius: 8px;
+
+}
+
+.homecard5 img {
+  height: 50vh;
+  margin-top: -3%;
+  margin-left: 2%;
+  animation: fadeInRightLeft 0.9s;
+}
+
+.fotter {
+  height: 20vh;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 6rem;
+  background-color: #dfe0e4;
+  border-radius: 8px;
+  padding-top: 3rem;
+}
+
+#li1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(120, 120, 120);
+  gap: 4rem;
+  font-size: 18px;
+  font-weight: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+
+}
+
+#li2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(120, 120, 120);
+  gap: 4rem;
+  font-size: 18px;
+  font-weight: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+}
+
+#copyright {
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  color: rgb(85, 84, 84);
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.notification-toast {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  max-width: 300px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 5px 20px hsla(0, 0%, 0%, 0.15);
+  transform: translateX(calc(-100% - 40px));
+  transition: 0.6s ease-in-out;
+  z-index: 5;
+  animation: slideInOut 10s ease-in-out;
+}
+
+
+.notification-toast.closed {
+  display: none;
+}
+
+
+.toast-banner {
+  width: 70px;
+  height: 100px;
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 8px;
+}
+
+.toast-banner img {
+  width: 40%;
+  height: 70%;
+  object-fit: contain;
+  object-position: center;
+  margin-left: -25px;
+}
+
+.toast-detail {
+  width: calc(100% - 85px);
+  padding-right: 10px;
+}
+
+.toast-message {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+.toast-title {
+  font-size: 14px;
+  font-weight: 500px;
+  color: black;
+}
+
+.toast-meta {
+  font-size: 10px;
+  color: rgb(140, 135, 135);
+}
+
+
+
+
+/*-------------------------annimations----------------------------*/
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+@keyframes slideInOut {
+
+  0%,
+  45%,
+  100% {
+    transform: translateX(calc(-100% - 40px));
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50%,
+  95% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+
+/*-----------------------------Phone mediaquery---------------------------*/
+
+@media (min-width:320px) and (max-width:480px) {
+  #checkbtn {
+    display: block;
+  }
+
+
+  nav ul {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 135, 0);
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
+    line-height: 40px;
+
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .homecard1 {
+    margin: 15vh auto 0 auto;
+    margin-left: 25px;
+
+  }
+
+  .homecontent1 {
+    font-size: 10px;
+    margin-left: -15px;
+    justify-content: center;
+  }
+
+  .discription1 {
+    font-size: 12px;
+    margin-left: -18px;
+  }
+
+  .discription2 {
+    font-size: 10px;
+    margin-left: -20px;
+  }
+
+  .homeimg1 img {
+    height: 250px;
+  }
+
+  .homeimg1 {
+    margin-right: 0px;
+    margin-top: -120px;
+  }
+
+  .homecard2 {
+    height: 30vh;
+    width: 50%;
+  }
+
+  .homecard2 img {
+    height: 40vh;
+    margin-left: -15%;
+    margin-top: -18%;
+
+  }
+
+  #discription3 {
+    display: none;
+  }
+
+  .homecard3 {
+    height: 30vh;
+    width: 50%;
+
+  }
+
+  .homecard3 img {
+    height: 35vh;
+    margin-top: -8%;
+    margin-left: -4rem;
+
+  }
+
+  .homecard4 {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    align-items: end;
+    /* centers vertically */
+
+  }
+
+  .homecard4 img {
+    height: 20vh;
+    margin-bottom: 8%;
+
+    margin-left: -10%;
+  }
+
+  .homecard5 {
+    height: 30vh;
+    width: 50%;
+  }
+
+  .homecard5 img {
+    height: 20vh;
+    margin-top: 8%;
+    margin-left: -10%;
+  }
+
+  .fotter {
+    height: 15vh;
+    width: 100%;
+    padding: 30px;
+
+  }
+
+  #li1 {
+    font-size: 10px;
+    gap: 20px;
+  }
+
+  #li2 {
+    font-size: 10px;
+    gap: 20px;
+  }
+
+  #copyright {
+    font-size: 10px;
+  }
+
+}
