@@ -25,7 +25,6 @@
 
 ### Demo Screeshots
 
-![Blog Desktop Demo]( "Desktop Demo")
 
 ### Prerequisites
 
